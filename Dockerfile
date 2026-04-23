@@ -6,6 +6,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY web_app.py .
+COPY pytest.ini .
 COPY entities/ ./entities/
 COPY services/ ./services/
 COPY controllers/ ./controllers/
